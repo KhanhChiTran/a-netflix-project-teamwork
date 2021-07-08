@@ -25,11 +25,13 @@
 }
 
 .site-logo__loading {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   width: 71px;
-  transform: translate(-50%, -50%);
+  z-index: 2000;
+  position: absolute;
 }
 
 /* Safari */
