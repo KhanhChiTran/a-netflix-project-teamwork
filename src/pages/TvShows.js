@@ -15,15 +15,11 @@ export default function Series() {
   useEffect(() => {
     setLoading(true);
 
-    fetch("http://localhost:5000/api/series")
+    fetch("/.netlify/functions/get-all-series")
       .then((res) => res.json())
       .then((result) => {
-        if (result) {
-          setSeries(result);
-          setLoading(false);
-        } else {
-          console.log(result.message);
-        }
+        setSeries(result.data);
+        setLoading(false);
       })
       .catch((err) => console.log(err));
   }, []);
