@@ -33,7 +33,7 @@ function Home() {
          * We just NEEDED 2 of these data to show on
          * viewable screen at the very first ( reduce loading time)
          * */
-        setLoading(false);
+        // setLoading(false);
         const upcomingData = await fetch(
           "/.netlify/functions/get-all-upcoming"
         ).then((response) => response.json());
@@ -44,7 +44,7 @@ function Home() {
         ).then((response) => response.json());
         setLatestMovies(latestData.data);
       } catch (error) {
-        setTimeout(() => setLoading(false), 3000);
+        // setTimeout(() => setLoading(false), 3000);
         console.log(error);
       }
     };
