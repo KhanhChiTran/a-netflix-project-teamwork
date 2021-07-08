@@ -26,10 +26,7 @@ export default function Movies() {
 
   return (
     <Layout>
-      <div
-        className="player-wrapper
-      "
-      >
+      <div className="row player-wrapper">
         {loading && <Loading />}
 
         <Carousel itemsToShow={5} itemsToScroll={5}>
