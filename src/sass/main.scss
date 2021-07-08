@@ -1,0 +1,15 @@
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/global";
+
+@import "components/navbar";
+@import "components/row";
+@import "components/banner";
+@import "components/player";
+@import "components/footer";
+@import "components/loading";
+@import "components/tvshow";
+// @import "./components/Banner.css";
+
+@import "pages/search";
